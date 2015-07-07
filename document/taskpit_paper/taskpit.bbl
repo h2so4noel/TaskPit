@@ -1,0 +1,27 @@
+\begin{thebibliography}{1}
+
+\bibitem{demarco1986controlling}
+Tom DeMarco.
+\newblock {\em Controlling software projects: Management, measurement, and
+  estimates}.
+\newblock Prentice Hall PTR, 1986.
+
+\bibitem{grady1992practical}
+Robert~B Grady.
+\newblock {\em Practical software metrics for project management and process
+  improvement}.
+\newblock Prentice-Hall, Inc., 1992.
+
+\bibitem{putnam2013five}
+Lawrence Putnam and Ware Myers.
+\newblock {\em Five core metrics: the intelligence behind successful software
+  management}.
+\newblock Addison-Wesley, 2013.
+
+\bibitem{nec2010software}
+直美 and 誉田.
+\newblock {\em ソフトウェア品質会計: NEC
+  の高品質ソフトウェア開発を支える品質保証技術}.
+\newblock 日科技連出版社, 2010.
+
+\end{thebibliography}
