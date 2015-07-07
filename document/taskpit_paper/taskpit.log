@@ -1,10 +1,10 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2015.7.7)  7 JUL 2015 18:17
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2015.7.7)  7 JUL 2015 18:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**taskpit.ltx
-(./taskpit.ltx
+**taskpit.tex
+(./taskpit.tex
 pLaTeX2e <2006/11/10> (based on LaTeX2e <2015/01/01> patch level 0)
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
@@ -81,6 +81,6 @@ Here is how much of TeX's memory you used:
  3894 multiletter control sequences out of 15000+600000
  12897 words of font info for 50 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 22i,6n,19p,1260b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 22i,6n,19p,1259b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on taskpit.dvi (2 pages, 4156 bytes).
