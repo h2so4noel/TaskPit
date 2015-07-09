@@ -40,11 +40,36 @@
 \section{TaskPit}
 
 \subsection{System Requirements}
-	Based on the previous chapter of this paper and the requirements of task measuring system, our system requirements are as follow:
+	Based on the previous chapter of this paper and the requirements of task measuring system, our system requirements are described in detail in the following subsection: \par
 	
-\subparagraph{[Requirement 1: Binding between Tasks and Applications]}
+\subsubsection{[Requirement 1: Binding between Tasks and Applications]}
+	In TaskPit system, each development task are to be work on different applications and windows. Therefore, we need to bind the task name with application name corresponding to it (the executable file name or process name). However, in the actual work, it is not always necessary to use only one application to perform one task. One application might work on many tasks, and one task might be completed by many applications. Moreover, even in different tasks, it may use the same application. In such a case, to distinguish tasks by differences in the character string in the name of the window during application execution, we approach it with BNF as follows:
+
+\begin{itemize}
+	\item[] $\langle$Task$\rangle$ ::= $\langle$Application$\rangle$ \{$\|$$\langle$ Application $\rangle$\}
+	\item[] $\langle$Application$\rangle$ ::= $\langle$Executable File Name$\rangle$ [$\langle$Window Name$\rangle$]
+\end{itemize}
+
+	Tasks are defined as a set of one or more running applications, and applications are defined as a set of executable name and window name. Below are examples of how tasks are defined.
 	
-	
+\begin{itemize}
+	\item[] Mail = OUTLOOK.EXE $\|$ IEXPLORE.EXE "Gmail" $\|$ CHROME.EXE "Gmail"
+	\item[] Documentation = WINWORD.EXE $\|$ NOTEPAD.EXE $\|$ TERAPAD.EXE
+	\item[] Browsing = IEXPLORE.EXE $\|$ CHROME.EXE
+	\item[] Searching = IEXPLORE.EXE "Google" $\|$ CHROME.EXE "Google"
+	\item[] Spreadsheet = EXCEL.EXE
+	\item[] Programming = eclipse.exe $\|$ devenv.exe
+	\item[] Testing = mstsc.exe $\|$ Beyond32.exe $\|$ DF.exe
+\end{itemize}
+
+\subsubsection{[Requirement 2: Automated Data Measurement]}
+
+\noindent $\bullet$ Task Execution Time Measurement \par
+	Time will start recording for each of the application and window when "Application is in use" which refers to a state where that window is currently in focus. However, even if it is in focus, if the time has passed (10 minutes) without active computer input (mouse and keyboard), it will be recorded as not using any application.
+
+\noindent $\bullet$ Amount of Work Measurement \par
+	Amount of work will be recorded by the input of the computer, refers to keyboard strokes and mouse clicks.
+
 \bibliography {taskpit}
 \bibliographystyle {plain}
 
