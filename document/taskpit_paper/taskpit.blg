@@ -3,45 +3,51 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: taskpit.aux
 The style file: plain.bst
 Database file #1: taskpit.bib
-You've used 4 entries,
+Warning--I didn't find a database entry for ""
+Warning--to sort, need author or key in taskpit
+Warning--to sort, need author or key in processdashboard
+Warning--to sort, need author or key in taskcoach
+Warning--to sort, need author or key in slimtimer
+You've used 14 entries,
             2118 wiz_defined-function locations,
-            517 strings with 4506 characters,
-and the built_in function-call counts, 952 in all, are:
-= -- 82
-> -- 40
-< -- 0
-+ -- 16
-- -- 12
-* -- 42
-:= -- 173
-add.period$ -- 12
-call.type$ -- 4
-change.case$ -- 14
+            565 strings with 5878 characters,
+and the built_in function-call counts, 3836 in all, are:
+= -- 364
+> -- 154
+< -- 2
++ -- 65
+- -- 50
+* -- 215
+:= -- 606
+add.period$ -- 40
+call.type$ -- 14
+change.case$ -- 61
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 48
-empty$ -- 89
-format.name$ -- 12
-if$ -- 199
+cite$ -- 18
+duplicate$ -- 166
+empty$ -- 356
+format.name$ -- 50
+if$ -- 838
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 8
-newline$ -- 23
-num.names$ -- 8
-pop$ -- 34
+int.to.str$ -- 14
+missing$ -- 16
+newline$ -- 69
+num.names$ -- 20
+pop$ -- 113
 preamble$ -- 1
-purify$ -- 14
+purify$ -- 53
 quote$ -- 0
-skip$ -- 26
+skip$ -- 116
 stack$ -- 0
-substring$ -- 20
-swap$ -- 4
-text.length$ -- 0
+substring$ -- 171
+swap$ -- 32
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
-warning$ -- 0
-while$ -- 8
-width$ -- 5
-write$ -- 42
+type$ -- 44
+warning$ -- 4
+while$ -- 30
+width$ -- 16
+write$ -- 136
 is.kanji.str$ -- 0
+(There were 5 warnings)

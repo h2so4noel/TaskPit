@@ -1,7 +1,8 @@
 \documentclass {article}
 \usepackage {cite}
+\usepackage {indentfirst}
 
-\title {TaskPit: A Software Development Task Measurement System for Software Process Analysis}
+\title {Industry Application of Software Development Task Measurement System : TaskPit}
 \author 	{Pawin Suthipornopas,
 		Pattara Leelaprute, \\
 		Akito Monden, 
@@ -10,21 +11,42 @@
 		Kenji Araki, 
 		Kingo Yamada, 
 		Ken-ichi Matsumoto}
-\date{2015-07-07}
+\date {2015-07-07}
 
 \begin {document}
 
-\pagenumbering{arabic}
+\pagenumbering {arabic}
 \maketitle
 
-\section{Abstract}
-	In this paper we propose a tool called TaskPit to automatically monitors software development tasks such as programming, testing, and documentation. TaskPit automatically records the time, keystrokes, and mouse clicks for each task, where a task is associated with a set of software applications and windows titles. It also records the time series data of size and the number of documents associated with each task. This paper also describes two case studies using TaskPit. The first case study has total of 12 people working in 6 days of measurement. (a) Leader is too engaged in the development work rather than management, (b) not many people are communicating by e-mail, (c) the time spent writing e-mail is not corresponding to the length of that e-mail, could use improvements in writing the correct form of e-mail to specific type of person. A clue of improvements from this project is found in the second case study where a single developer was measured in 13 business days. As a result (d) on working days there are more than half of unplanned work, but (e) the total work done passed the estimated number because the use of TaskPit to help manage their work as a developer. It is suggested that TaskPit could help in this improvement.
+\section {Abstract}
+	To find any problems in a software development process, we have been developing an automated measurement tool called TaskPit, which monitors software development tasks such as programming, testing and documentation based on the execution history of software applications. This paper introduces the system requirements, design and implementation of TaskPit; then, presents two industry case studies applying TaskPit to actual software development. In the first case study, we applied TaskPit to 12 software developers in a certain software development division. As a result, several concerns (to be improved) have been revealed such as (a) a project leader spend too much time on development tasks while he was supposed to be a manager rather than a developer, (b) several developers rarely used e-mails while a company instructed developers to use e-mails as much as possible to leave communication records during development, and (c) several developers wrote too long e-mails to their customers. In the second case study, we have recorded the planned, actual, and declared time of development tasks. As a result, we found that (d) there were unplanned tasks in more than half of days, and (e) the declared time became closer day by day to the actual time measured by TaskPit. These suggest that TaskPit is useful not only for a project manager who is responsible to the process improvement but also for a developer who wants to improve by him/herself.
+
+\section {Introduction}
 	
-\section{Introduction}
-	As Tom DeMarco said 「 You can't control what you can't measure」it is essential to control the process of developing software\cite{demarco1986controlling}. For this purpose, various product processes metrics and measurement have been applied to the developing site\cite{grady1992practical}. In many of the environment of development site; the software scale, work hours, and bugs are measured and used for project management, and quality assurance of the development\cite{nec2010software}\cite{putnam2013five}.
+	To promote an idea of "Process Improvement via Measurement" in software industry, we had developed a software development task measurement system called TaskPit\cite{taskpit} in 2008, and have been updating it till today. TaskPit automatically records the time and the amount of work of daily tasks of an individual developer or a development team to find any problems in software development. It can record the time spent for each task such as "Programming" using Eclipse or Visual Studio, "Documentation" using Word or other text editors, "E-mail" using Gmail on a browser and so on, where a task is associated with a set of applications and window titles. TaskPit records an amount of work for each task in terms of the number of keystrokes and the mouse clicks. It can also records an amount of deliverables of each task as the increased size of files in a directory associated to the task. \par
+	To date, the TaskPit community has been gradually grown up, user manuals and related tools have been developed by volunteers, and as of July 2015, total downloads of TaskPit version 1.0.0 to 1.0.3 has reached 1500\cite{taskpit}. Now we are demanding for industry case studies to share the experience and findings about how TaskPit could be used for process improvement. \par
+	This paper introduces the system requirements, design and implementation of TaskPit; then presents industry case studies applying TaskPit to two software organizations. The first organization consists of 12 members, measured in 9 days (6 business days) where 7 are developers, 3 leaders, and 2 customer services. Analysis of data and measurements of the work surveyed in departments are collected and summarize by one veteran employee from other department to look after the flow of their work. In the second organization there is only one developer measured in 17 days (13 business days) measured by TaskPit. In addition to the automatic measurement TaskPit did, there is also a value plan and engage time for each development tasks for this developer each day. This is to clarify the difference between the measured value that was collected and analyze manually, and automatic measurement. \par
+	Please note that this paper is an extension of our Japanese workshop paper (short paper) [FOSE2013] with an additional (second) case study. In this paper we also added explanations of the system requirements, design and implementation of TaskPit to clarify the design concept of TaskPit and to illustrate how TaskPit can be used in software organizations. \par
+	In the following Chapter 2, we will describe the related work and research in background, Chapter 3 will be about TaskPit and its system requirements, design, and implementation. In Chapter 4 and 5 will be measurement results and analysis in two organizations. Lastly in Chapter 6 is a summary.
 	
-\bibliography{taskpit}{}
-\bibliographystyle{plain}
+\section {Background and Related Work}
+	
+	As Tom DeMarco said 「You can't control what you can't measure」we believe it is essential to control the process of developing software\cite{demarco1986controlling}. For this purpose, various product processes metrics and measurement have been applied to the developing site\cite{grady1992practical}. In many of the environment of development site; the software scale, work hours, and bugs are measured and used for project management, and quality assurance of the development\cite{nec2010software}\cite{putnam2013five}. \par
+	On the other hand, problems found in the development field are mostly from human factors\cite{sec2010itproject} rather than the product process and measurements. This is considered to be natural as described in Personal Software Process (PSP) and Team Software Process (TSP), where developers and the development team follow up the work of day-to-day tasks and record everything manually, these methods are well-known as a method for process improvement\cite{humphrey1995discipline}\cite{humphrey2001}. However, as developers have to do this manually, this method popularity grows thin and does not spread widely as it should. \par
+	At first, PSP has been proposed as a measurement procedure in accordance with a specific measurement form which required accurate calculation and required great cost to the data measurement. There are also tools and systems that act as a supporting role in data measurement to help calculating data more easily such as Process Dashboard\cite{processdashboard}, Task Coach\cite{taskcoach} and Slim Timer\cite{slimtimer}, but using these tools will required to switch the measurement work (Context Switching) because they are all in different environment, and this has become a barrier in introducing the measurement procedure to the development site\cite{sillitti2003collecting}. \par
+	Without causing the Context Switch, automatic measurement tools on software development have been proposed, for example EPM\cite{ohira2004empirical}, Ginger\cite{}, Ginger2\cite{torii1999ginger2}, HackyStat\cite{}, and PROM\cite{}. Detailed data collected by these tools can be used with less cost. \par
+	In this paper, the main objective is to support the introduction of process improvement in the development team. It is easy to introduce TaskPit as a system that does not require pre-planning, and capable of carrying out process improvement through measurement. TaskPit will record the number of hours and amount of work separately task by task, and can automatically measure the changes in the result number compared to actual number. Data in the system is to measure the amount of work, and achievement in each task are directly represents and are easily analyzed. It is suitable for the stage of process improvement during development.
+	
+\section{TaskPit}
+
+\subsection{System Requirements}
+	Based on the previous chapter of this paper and the requirements of task measuring system, our system requirements are as follow:
+	
+\subparagraph{[Requirement 1: Binding between Tasks and Applications]}
+	
+	
+\bibliography {taskpit}
+\bibliographystyle {plain}
 
 	
 \end {document}

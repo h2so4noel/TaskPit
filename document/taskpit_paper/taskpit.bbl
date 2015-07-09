@@ -1,4 +1,20 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{processdashboard}
+Process dashboard.
+\newblock http://processdash.sourceforge.net/pspdash.html.
+
+\bibitem{slimtimer}
+Slimtimer - time tracking without the timesheet.
+\newblock http://www.slimtimer.com/.
+
+\bibitem{taskcoach}
+Task coach - your friendly task manager.
+\newblock http://members.chello.nl/f.niessink/.
+
+\bibitem{taskpit}
+Taskpit.
+\newblock http://taskpit.jpn.org.
 
 \bibitem{demarco1986controlling}
 Tom DeMarco.
@@ -12,16 +28,53 @@ Robert~B Grady.
   improvement}.
 \newblock Prentice-Hall, Inc., 1992.
 
+\bibitem{humphrey1995discipline}
+Watts~S Humphrey.
+\newblock {\em A discipline for software engineering}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., 1995.
+
+\bibitem{humphrey2001}
+Watts~S Humphrey.
+\newblock {\em パーソナルソフトウェアプロセス入門}.
+\newblock 共立出版, 2001.
+
+\bibitem{ohira2004empirical}
+Masao Ohira, Reishi Yokomori, Makoto Sakai, Ken-ichi Matsumoto, Katsuro Inoue,
+  and Koji Torii.
+\newblock Empirical project monitor: A tool for mining multiple project data.
+\newblock In {\em International Workshop on Mining Software Repositories
+  (MSR2004)}, pages 42--46. IET, 2004.
+
 \bibitem{putnam2013five}
 Lawrence Putnam and Ware Myers.
 \newblock {\em Five core metrics: the intelligence behind successful software
   management}.
 \newblock Addison-Wesley, 2013.
 
+\bibitem{sillitti2003collecting}
+Alberto Sillitti, Andrea Janes, Giancarlo Succi, and Tullio Vernazza.
+\newblock Collecting, integrating and analyzing software metrics and personal
+  software process data.
+\newblock In {\em Euromicro Conference, 2003. Proceedings. 29th}, pages
+  336--342. IEEE, 2003.
+
+\bibitem{torii1999ginger2}
+Koji Torii, Ken-ichi Matsumoto, Kumiyo Nakakoji, Yoshihiro Takada, Shingo
+  Takada, and Kazuyuki Shima.
+\newblock Ginger2: An environment for computer-aided empirical software
+  engineering.
+\newblock {\em Software Engineering, IEEE Transactions on}, 25(4):474--492,
+  1999.
+
 \bibitem{nec2010software}
 直美 and 誉田.
 \newblock {\em ソフトウェア品質会計: NEC
   の高品質ソフトウェア開発を支える品質保証技術}.
 \newblock 日科技連出版社, 2010.
+
+\bibitem{sec2010itproject}
+樋口登.
+\newblock It プロジェクトを 「見える化」 するチェックシート.
+\newblock {\em SEC journal}, 6(1):32--35, 2010.
 
 \end{thebibliography}

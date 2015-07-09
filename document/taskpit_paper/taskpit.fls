@@ -11,6 +11,8 @@ INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/cite/cite.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/cite/cite.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/tools/indentfirst.sty
+INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/tools/indentfirst.sty
 INPUT taskpit.aux
 INPUT taskpit.aux
 OUTPUT taskpit.aux
@@ -33,8 +35,10 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/ptex/standard/tgoth10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/ptex/standard/goth10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT taskpit.bbl
-INPUT taskpit.bbl
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 OUTPUT taskpit.dvi
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT taskpit.bbl
+INPUT taskpit.bbl
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT taskpit.aux
