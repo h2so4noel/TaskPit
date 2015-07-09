@@ -1,6 +1,13 @@
-\documentclass {article}
+\documentclass [paper]{ieice}
 \usepackage {cite}
 \usepackage {indentfirst}
+\usepackage {latexsym}
+\usepackage [varg]{txfonts}
+
+\setcounter{page}{1}
+
+%local definitions
+\def\ClassFile{\texttt{ieice.cls}}
 
 \title {Industry Application of Software Development Task Measurement System : TaskPit}
 \author 	{Pawin Suthipornopas,
@@ -43,14 +50,14 @@
 	Based on the previous chapter of this paper and the requirements of task measuring system, our system requirements are described in detail in the following subsection: \par
 	
 \subsubsection{[Requirement 1: Binding between Tasks and Applications]}
-	In TaskPit system, each development task are to be work on different applications and windows. Therefore, we need to bind the task name with application name corresponding to it (the executable file name or process name). However, in the actual work, it is not always necessary to use only one application to perform one task. One application might work on many tasks, and one task might be completed by many applications. Moreover, even in different tasks, it may use the same application. In such a case, to distinguish tasks by differences in the character string in the name of the window during application execution, we approach it with BNF as follows:
+	In TaskPit system, each development task are to be work on different applications and windows. Therefore, we need to bind the task name with application name corresponding to it (the executable file name or process name). However, in the actual work, it is not always necessary to use only one application to perform one task. One application might work on many tasks, and one task might be completed by many applications. Moreover, even in different tasks, it may use the same application. In such a case, to distinguish tasks by differences in the character string in the name of the window during application execution, we approach it with BNF as follows: \par
 
 \begin{itemize}
 	\item[] $\langle$Task$\rangle$ ::= $\langle$Application$\rangle$ \{$\|$$\langle$ Application $\rangle$\}
 	\item[] $\langle$Application$\rangle$ ::= $\langle$Executable File Name$\rangle$ [$\langle$Window Name$\rangle$]
 \end{itemize}
 
-	Tasks are defined as a set of one or more running applications, and applications are defined as a set of executable name and window name. Below are examples of how tasks are defined.
+	Tasks are defined as a set of one or more running applications, and applications are defined as a set of executable name and window name. Below are examples of how tasks are defined. \par
 	
 \begin{itemize}
 	\item[] Mail = OUTLOOK.EXE $\|$ IEXPLORE.EXE "Gmail" $\|$ CHROME.EXE "Gmail"
