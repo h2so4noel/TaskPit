@@ -8,9 +8,39 @@
 
 %local definitions
 \def\ClassFile{\texttt{ieice.cls}}
+\newcommand{\PS}{{\scshape Post\-Script}}
+\newcommand{\AmSLaTeX}{%
+ $\mathcal A$\lower.4ex\hbox{$\!\mathcal M\!$}$\mathcal S$-\LaTeX}
+\def\BibTeX{{\rmfamily B\kern-.05em
+ \textsc{i\kern-.025em b}\kern-.08em
+  T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\hyphenation{man-u-script}
+\makeatletter
+\def\tmpcite#1{\@ifundefined{b@#1}{\textbf{?}}{\csname b@#1\endcsname}}%
+\makeatother
+%end local definitions
+
+\field{A}
+\vol{01}
+\no{01}
 
 \title {Industry Application of Software Development Task Measurement System : TaskPit}
-\author 	{Pawin Suthipornopas,
+%\titlenote{This paper was presented at ...}
+
+\authorlist{
+ 	\authorentry{Pawin Suthipornopas}{m}{labelA}
+ 	\authorentry{Pattara Leelaprute}{m}{labelA}
+	\authorentry{Akito Monden}{}{}
+	\authorentry{Hidetake Uwano}{}{}
+	\authorentry{Yasutaka Kamei}{}{}
+	\authorentry{Kenji Araki}{}{}
+	\authorentry{Kingo Yamada}{}{}
+	\authorentry{Ken-ichi Matsumoto}{}{}
+}
+\affiliate[labelA]{The author is with the Faculty ...}
+\affiliate[labelB]{The author is with the Faculty ...}
+
+\author{Pawin Suthipornopas,
 		Pattara Leelaprute, \\
 		Akito Monden, 
 		Hidetake Uwano, 
@@ -18,11 +48,13 @@
 		Kenji Araki, 
 		Kingo Yamada, 
 		Ken-ichi Matsumoto}
+		
+
+
 \date {2015-07-07}
 
 \begin {document}
 
-\pagenumbering {arabic}
 \maketitle
 
 \section {Abstract}

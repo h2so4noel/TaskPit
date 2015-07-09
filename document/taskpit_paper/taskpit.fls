@@ -98,6 +98,7 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/txfonts/txr.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/txfonts/txss.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/txfonts/txsssl.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/txfonts/txb.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/txfonts/txbi.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/ptex/standard/tmin8.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/ptex/standard/min8.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/txfonts/txr.tfm
