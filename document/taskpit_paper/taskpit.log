@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2015.7.7)  10 JUL 2015 11:40
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015) (preloaded format=platex 2015.7.7)  10 JUL 2015 16:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -259,7 +259,7 @@ Overfull \hbox (1.44106pt too wide) in paragraph at lines 4--6
 h.html. 
  []
 
-
+[2]
 Overfull \hbox (24.04105pt too wide) in paragraph at lines 8--10
 []\OT1/txr/m/n/8 Slimtimer - time track-ing with-out the timesheet.  http://www
 .slimtimer.com/. 
@@ -275,16 +275,16 @@ LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <8> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 21.
 LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <8> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 21.
-[2]) [3
+) [3
 
 ] (./taskpit.aux) ) 
 Here is how much of TeX's memory you used:
  1439 strings out of 493777
  16805 string characters out of 6151335
- 75932 words of memory out of 5000000
+ 74932 words of memory out of 5000000
  4926 multiletter control sequences out of 15000+600000
  34218 words of font info for 109 fonts, out of 8000000 for 9000
  930 hyphenation exceptions out of 8191
- 25i,10n,22p,1467b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 25i,10n,22p,1467b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on taskpit.dvi (3 pages, 17980 bytes).
+Output written on taskpit.dvi (3 pages, 18476 bytes).

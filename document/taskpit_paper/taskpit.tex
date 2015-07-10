@@ -109,7 +109,16 @@
 
 \noindent $\bullet$ Amount of Work Measurement \par
 	Amount of work will be recorded by the input of the computer, refers to keyboard strokes and mouse clicks.
+	
+\noindent $\bullet$ Artifacts Measurement \par
+	For each task, it will be defined as a directory and file extensions. TaskPit scans the files under specified directory and measure the increasing  and decreasing number of total file size and number of files in intervals. The definition is described below in BNF.
 
+\begin{itemize}
+	\item[] $\langle$Artifact$\rangle$ ::= $\langle$Directory$\rangle$ $\langle$Extension$\rangle$ \{$\langle$ Extension $\rangle$\}
+\end{itemize}
+
+	And below are some examples.
+	
 \bibliography {taskpit}
 \bibliographystyle {plain}
 
