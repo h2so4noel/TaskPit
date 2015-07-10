@@ -9,8 +9,6 @@ INPUT ieice.cls
 INPUT ieice.cls
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/cite/cite.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/cite/cite.sty
-INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/tools/indentfirst.sty
-INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/tools/indentfirst.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/latexsym.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/base/latexsym.sty
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/txfonts/txfonts.sty
@@ -125,13 +123,13 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/txfonts/txexa.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/txfonts/txexa.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/ptex/standard/tmin6.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/ptex/standard/min6.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/ptex/standard/tgoth8.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/ptex/standard/goth8.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/txfonts/txb.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/txfonts/omstxr.fd
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/txfonts/omstxr.fd
 OUTPUT taskpit.dvi
 INPUT taskpit.bbl
 INPUT taskpit.bbl
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/ptex/standard/tgoth8.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/ptex/standard/goth8.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/txfonts/txb.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/txfonts/txi.tfm
 INPUT taskpit.aux

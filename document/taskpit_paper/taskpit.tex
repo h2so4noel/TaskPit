@@ -1,6 +1,5 @@
 \documentclass [paper]{ieice}
 \usepackage {cite}
-\usepackage {indentfirst}
 \usepackage {latexsym}
 \usepackage [varg]{txfonts}
 
@@ -28,17 +27,17 @@
 %\titlenote{This paper was presented at ...}
 
 \authorlist{
- 	\authorentry{Pawin Suthipornopas}{m}{labelA}
- 	\authorentry{Pattara Leelaprute}{m}{labelA}
+ 	\authorentry{Pawin Suthipornopas}{}{labelA}
+ 	\authorentry{Pattara Leelaprute}{}{labelA}
 	\authorentry{Akito Monden}{}{}
 	\authorentry{Hidetake Uwano}{}{}
 	\authorentry{Yasutaka Kamei}{}{}
 	\authorentry{Kenji Araki}{}{}
 	\authorentry{Kingo Yamada}{}{}
-	\authorentry{Ken-ichi Matsumoto}{}{}
+	\authorentry{Ken-ichi Matsumoto}{}{labelB}
 }
-\affiliate[labelA]{The author is with the Faculty ...}
-\affiliate[labelB]{The author is with the Faculty ...}
+\affiliate[labelA]{Department of Computer Engineering, Kasetsart University}
+\affiliate[labelB]{Nara Institute of Science and Technology}
 
 \author{Pawin Suthipornopas,
 		Pattara Leelaprute, \\
@@ -56,10 +55,12 @@
 \begin {document}
 
 \maketitle
+\begin {summary}
+	This paper describes introduction of software development process measurement into industry level of software development using TaskPit with little requirements and less cost in implementing with the industry level.
+\end {summary}
 
 \section {Abstract}
 	To find any problems in a software development process, we have been developing an automated measurement tool called TaskPit, which monitors software development tasks such as programming, testing and documentation based on the execution history of software applications. This paper introduces the system requirements, design and implementation of TaskPit; then, presents two industry case studies applying TaskPit to actual software development. In the first case study, we applied TaskPit to 12 software developers in a certain software development division. As a result, several concerns (to be improved) have been revealed such as (a) a project leader spend too much time on development tasks while he was supposed to be a manager rather than a developer, (b) several developers rarely used e-mails while a company instructed developers to use e-mails as much as possible to leave communication records during development, and (c) several developers wrote too long e-mails to their customers. In the second case study, we have recorded the planned, actual, and declared time of development tasks. As a result, we found that (d) there were unplanned tasks in more than half of days, and (e) the declared time became closer day by day to the actual time measured by TaskPit. These suggest that TaskPit is useful not only for a project manager who is responsible to the process improvement but also for a developer who wants to improve by him/herself.
-
 \section {Introduction}
 	
 	To promote an idea of "Process Improvement via Measurement" in software industry, we had developed a software development task measurement system called TaskPit\cite{taskpit} in 2008, and have been updating it till today. TaskPit automatically records the time and the amount of work of daily tasks of an individual developer or a development team to find any problems in software development. It can record the time spent for each task such as "Programming" using Eclipse or Visual Studio, "Documentation" using Word or other text editors, "E-mail" using Gmail on a browser and so on, where a task is associated with a set of applications and window titles. TaskPit records an amount of work for each task in terms of the number of keystrokes and the mouse clicks. It can also records an amount of deliverables of each task as the increased size of files in a directory associated to the task. \par
@@ -92,19 +93,19 @@
 	Tasks are defined as a set of one or more running applications, and applications are defined as a set of executable name and window name. Below are examples of how tasks are defined. \par
 	
 \begin{itemize}
-	\item[] Mail = OUTLOOK.EXE $\|$ IEXPLORE.EXE "Gmail" $\|$ CHROME.EXE "Gmail"
-	\item[] Documentation = WINWORD.EXE $\|$ NOTEPAD.EXE $\|$ TERAPAD.EXE
-	\item[] Browsing = IEXPLORE.EXE $\|$ CHROME.EXE
-	\item[] Searching = IEXPLORE.EXE "Google" $\|$ CHROME.EXE "Google"
-	\item[] Spreadsheet = EXCEL.EXE
-	\item[] Programming = eclipse.exe $\|$ devenv.exe
-	\item[] Testing = mstsc.exe $\|$ Beyond32.exe $\|$ DF.exe
+	\item Mail = OUTLOOK.EXE $\|$ IEXPLORE.EXE "Gmail" $\|$ CHROME.EXE "Gmail"
+	\item Documentation = WINWORD.EXE $\|$ NOTEPAD.EXE $\|$ TERAPAD.EXE
+	\item Browsing = IEXPLORE.EXE $\|$ CHROME.EXE
+	\item Searching = IEXPLORE.EXE "Google" $\|$ CHROME.EXE "Google"
+	\item Spreadsheet = EXCEL.EXE
+	\item Programming = eclipse.exe $\|$ devenv.exe
+	\item Testing = mstsc.exe $\|$ Beyond32.exe $\|$ DF.exe
 \end{itemize}
 
 \subsubsection{[Requirement 2: Automated Data Measurement]}
 
 \noindent $\bullet$ Task Execution Time Measurement \par
-	Time will start recording for each of the application and window when "Application is in use" which refers to a state where that window is currently in focus. However, even if it is in focus, if the time has passed (10 minutes) without active computer input (mouse and keyboard), it will be recorded as not using any application.
+	Time will start recording for each of the application and window when "Application is in use" which refers to a state where that window is currently in focus. However, even if it is in focus, if the time has passed (10 minutes) without active computer input (mouse and keyboard), it will be recorded as not using any application. \newline
 
 \noindent $\bullet$ Amount of Work Measurement \par
 	Amount of work will be recorded by the input of the computer, refers to keyboard strokes and mouse clicks.
