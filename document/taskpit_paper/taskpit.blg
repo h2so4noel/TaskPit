@@ -1,4 +1,4 @@
-This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2015)
+This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: taskpit.aux
 The style file: plain.bst
@@ -10,7 +10,7 @@ Warning--to sort, need author or key in taskcoach
 Warning--to sort, need author or key in slimtimer
 You've used 14 entries,
             2118 wiz_defined-function locations,
-            565 strings with 5878 characters,
+            564 strings with 5954 characters,
 and the built_in function-call counts, 3836 in all, are:
 = -- 364
 > -- 154
@@ -49,5 +49,4 @@ warning$ -- 4
 while$ -- 30
 width$ -- 16
 write$ -- 136
-is.kanji.str$ -- 0
 (There were 5 warnings)

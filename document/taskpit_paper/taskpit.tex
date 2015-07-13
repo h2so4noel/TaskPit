@@ -1,7 +1,10 @@
 \documentclass [paper]{ieice}
 \usepackage {cite}
+\usepackage{graphicx}
+	\graphicspath{{images/}}
 \usepackage {latexsym}
 \usepackage [varg]{txfonts}
+\usepackage[none]{hyphenat}%%%%
 
 \setcounter{page}{1}
 
@@ -96,7 +99,7 @@
 	\item Mail = OUTLOOK.EXE $\|$ IEXPLORE.EXE "Gmail" $\|$ CHROME.EXE "Gmail"
 	\item Documentation = WINWORD.EXE $\|$ NOTEPAD.EXE $\|$ TERAPAD.EXE
 	\item Browsing = IEXPLORE.EXE $\|$ CHROME.EXE
-	\item Searching = IEXPLORE.EXE "Google" $\|$ CHROME.EXE "Google"
+	\item Searching = IEXPLORE.EXE "Google" \newline $\|$ CHROME.EXE "Google"
 	\item Spreadsheet = EXCEL.EXE
 	\item Programming = eclipse.exe $\|$ devenv.exe
 	\item Testing = mstsc.exe $\|$ Beyond32.exe $\|$ DF.exe
@@ -108,19 +111,53 @@
 	Time will start recording for each of the application and window when "Application is in use" which refers to a state where that window is currently in focus. However, even if it is in focus, if the time has passed (10 minutes) without active computer input (mouse and keyboard), it will be recorded as not using any application. \newline
 
 \noindent $\bullet$ Amount of Work Measurement \par
-	Amount of work will be recorded by the input of the computer, refers to keyboard strokes and mouse clicks.
+	Amount of work will be recorded by the input of the computer, refers to keyboard strokes and mouse clicks. \newline
 	
-\noindent $\bullet$ Artifacts Measurement \par
-	For each task, it will be defined as a directory and file extensions. TaskPit scans the files under specified directory and measure the increasing  and decreasing number of total file size and number of files in intervals. The definition is described below in BNF.
+\noindent $\bullet$ Files Measurement \par
+	For each task file, it will be defined as a directory and file extensions. TaskPit scans the files under specified directory and measure the increasing  and decreasing number of total file size and number of files in intervals. The definition is described below in BNF.
 
 \begin{itemize}
 	\item[] $\langle$Artifact$\rangle$ ::= $\langle$Directory$\rangle$ $\langle$Extension$\rangle$ \{$\langle$ Extension $\rangle$\}
 \end{itemize}
 
-	And below are some examples.
+\noindent And below are some examples. \par
+	
+\begin{itemize}
+	\item[] Requirement analysis documents = 
+	\item[] "C:$\backslash$Users$\backslash$monden$\backslash$desktop$\backslash$development$\backslash$SRS", 
+	\item[]"doc,tex,txt" \newline
+	\item[]Design documents = 
+	\item[] "C:\textbackslash Documents and Settings\textbackslash monden\textbackslash desktop\textbackslash 
+	\item[] development\textbackslash sources", "c,cpp,java" \newline
+\end{itemize}
+
+\noindent $\bullet$ Regarding Privacy \par
+		During the measuring process of the team, it is necessary to protect personal information and keeping the privacy of developers in a comfort zone. In the proposed system, the key strokes, applications, window names, file names, and many more are not recorded to prevent the feeling of being "monitored" by the user, because it could cause negative feedback to the system we introduced. Any other window or application that user open up will instead recorded as "Other Tasks".
+		
+\subsubsection{[Requirement 3: Team measurement]}
+	Data measured for each user is collected at one time with timestamp placed with each task in the team unit, and then count up amount of efforts and products produced.
+	
+\subsubsection{[Requirement 4: Data visualization]}
+	To visualize the measurement results in the development team, for a specific period of time we can display the graph as a bar chart or line chart to visulize total time spent doing tasks and total time spent during work by using timestamp from the result log file of our proposed system. The data visualization will require a log file from proposed system, compiled it into a pre-processed version to sum up all work hour and visualize in graphics. ***Will add charts that can visualize keystrokes and mouse clicks in the future*** Chart of total time spent on tasks and total work hour will look like Figure \ref{fig1} and Figure \ref{fig2} respectively.
+	
+\begin{figure}[h]
+	\centering	
+\includegraphics[width=0.5\textwidth]{fig1}
+	\caption{Total time spent on tasks}
+	\label{fig1}
+\end{figure}
+
+\begin{figure}[h]
+	\centering	
+\includegraphics[width=0.3\textwidth]{fig2}
+	\caption{Total work hour}
+	\label{fig2}
+\end{figure}
+	
+\subsection{System Design}
+	
 	
 \bibliography {taskpit}
 \bibliographystyle {plain}
-
 	
 \end {document}
