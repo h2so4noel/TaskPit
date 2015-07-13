@@ -1,15 +1,16 @@
 # Fdb version 3
-["bibtex taskpit"] 1436762062 "taskpit.aux" "taskpit.bbl" "taskpit" 1436762207
+["bibtex taskpit"] 1436772672 "taskpit.aux" "taskpit.bbl" "taskpit" 1436772673
   "/usr/local/texlive/2015/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "taskpit.aux" 1436762207 947 7f1433334ba93e17cf34ca3c23b36258 ""
+  "taskpit.aux" 1436772673 971 0ac5c5108bbef085983a0e7bcf6ec5cf ""
   "taskpit.bcf" 0 -1 0 ""
   "taskpit.bib" 1436408091 3850 0282fd116a97e1f64d091991822c8404 ""
   (generated)
   "taskpit.blg"
   "taskpit.bbl"
-["pdflatex"] 1436762206 "taskpit.tex" "taskpit.pdf" "taskpit" 1436762207
+["pdflatex"] 1436772672 "taskpit.tex" "taskpit.pdf" "taskpit" 1436772673
   "./images/fig1.png" 1436754537 69014 d29c183c7fc14603ca14d1ac3d2114b5 ""
   "./images/fig2.png" 1436754593 34204 99e2178141c7e4be764638a1c5b3b1d4 ""
+  "./images/fig4.png" 1436771379 30161 689bc8d5eba75cea95bd48593d72872d ""
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm" 1136768653 520 82a3d37183f34b6eb363a161dfc002c2 ""
@@ -95,10 +96,11 @@
   "ieice.cls" 1324030669 58914 3336f43953ba0c3ce55194c5d60d10ac ""
   "images/fig1.png" 1436754537 69014 d29c183c7fc14603ca14d1ac3d2114b5 ""
   "images/fig2.png" 1436754593 34204 99e2178141c7e4be764638a1c5b3b1d4 ""
-  "taskpit.aux" 1436762207 947 7f1433334ba93e17cf34ca3c23b36258 ""
-  "taskpit.bbl" 1436762063 2577 6ca99d750da3f5c3acc901245c1626ed "bibtex taskpit"
-  "taskpit.tex" 1436762206 14126 ddc64452d36806ab87e55013db59663a ""
+  "images/fig4.png" 1436771379 30161 689bc8d5eba75cea95bd48593d72872d ""
+  "taskpit.aux" 1436772673 971 0ac5c5108bbef085983a0e7bcf6ec5cf ""
+  "taskpit.bbl" 1436772672 2577 6ca99d750da3f5c3acc901245c1626ed "bibtex taskpit"
+  "taskpit.tex" 1436772670 14887 bfdab8fb4a5afa51a17cef63bdad5078 ""
   (generated)
-  "taskpit.pdf"
   "taskpit.log"
   "taskpit.aux"
+  "taskpit.pdf"

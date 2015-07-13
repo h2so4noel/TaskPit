@@ -59,7 +59,7 @@
 
 \maketitle
 \begin {summary}
-	This paper describes introduction of software development process measurement into industry level of software development using TaskPit with little requirements and less cost in implementing with the industry level.
+	Introduction of software development process measurement into industry level of software development using TaskPit with little requirements and less cost in implementing with the industry level. Contains two study cases, one is a group of developers measured in approximately a week of business days with normal method of measurement resulted in some improvements capability. Another study case is a single developer measured by TaskPit resulted in an active improvement in completing unplanned work in limited time. 
 \end {summary}
 
 \section {Abstract}
@@ -155,7 +155,14 @@
 \end{figure}
 	
 \subsection{System Design}
+	As shown in Figure \ref{fig4}, TaskPit have its own database working at the back end of the system along with the visualization unit, configuration, and log files with daily report. In the configuration file will contain definition of tasks and files as described before in the requirement section.
 	
+\begin{figure}[h]
+	\centering	
+\includegraphics[width=0.3\textwidth]{fig4}
+	\caption{Overall System}
+	\label{fig4}
+\end{figure}
 	
 \bibliography {taskpit}
 \bibliographystyle {plain}
