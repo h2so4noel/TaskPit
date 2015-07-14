@@ -59,11 +59,9 @@
 
 \maketitle
 \begin {summary}
-	Introduction of software development process measurement into industry level of software development using TaskPit with little requirements and less cost in implementing with the industry level. Contains two study cases, one is a group of developers measured in approximately a week of business days with normal method of measurement resulted in some improvements capability. Another study case is a single developer measured by TaskPit resulted in an active improvement in completing unplanned work in limited time. 
-\end {summary}
-
-\section {Abstract}
 	To find any problems in a software development process, we have been developing an automated measurement tool called TaskPit, which monitors software development tasks such as programming, testing and documentation based on the execution history of software applications. This paper introduces the system requirements, design and implementation of TaskPit; then, presents two industry case studies applying TaskPit to actual software development. In the first case study, we applied TaskPit to 12 software developers in a certain software development division. As a result, several concerns (to be improved) have been revealed such as (a) a project leader spend too much time on development tasks while he was supposed to be a manager rather than a developer, (b) several developers rarely used e-mails while a company instructed developers to use e-mails as much as possible to leave communication records during development, and (c) several developers wrote too long e-mails to their customers. In the second case study, we have recorded the planned, actual, and declared time of development tasks. As a result, we found that (d) there were unplanned tasks in more than half of days, and (e) the declared time became closer day by day to the actual time measured by TaskPit. These suggest that TaskPit is useful not only for a project manager who is responsible to the process improvement but also for a developer who wants to improve by him/herself.
+\end {summary}
+	
 \section {Introduction}
 	
 	To promote an idea of "Process Improvement via Measurement" in software industry, we had developed a software development task measurement system called TaskPit\cite{taskpit} in 2008, and have been updating it till today. TaskPit automatically records the time and the amount of work of daily tasks of an individual developer or a development team to find any problems in software development. It can record the time spent for each task such as "Programming" using Eclipse or Visual Studio, "Documentation" using Word or other text editors, "E-mail" using Gmail on a browser and so on, where a task is associated with a set of applications and window titles. TaskPit records an amount of work for each task in terms of the number of keystrokes and the mouse clicks. It can also records an amount of deliverables of each task as the increased size of files in a directory associated to the task. \par
@@ -163,7 +161,18 @@
 	
 \subsection{System Design}
 	As shown in Figure \ref{fig4}, TaskPit have its own database working at the back end of the system along with the visualization unit, configuration, and log files with daily report. In the configuration file will contain definitions of task and file as described before in the requirement section to be able to generate output of time interval of usage of each task and program in the log file. In Figure \ref{fig5} is the user interface of the program. Each task will record its own execution time by accumulating all time it has been in focus along with number of keystrokes and mouse clicks. \par
-	To meet up the requirement of being less burden to the overall system and without providing server too much load, there will be a specified shared directory to store measurement result. Visualization tool is also used with configuration files and log files to graph visualize chart from various aspects of measurement results for specific period of time. Working in the client to server fashion as shown in Figure \ref{fig6}.
+	To meet up the requirement of being less burden to the overall system and without providing server too much load, there will be a specified shared directory to store measurement result. Visualization tool is also used with configuration files and log files to graph visualize chart from various aspects of measurement results for specific period of time. Working in the client to server fashion as shown in Figure \ref{fig6}. \par
+	In addition, an overview report of daily work can be generated in both CSV format and in Excel .xls format. \par
+	
+\subsection{Implementation}
+	TaskPit 1.0.X operates using .Net Framework on  Windows XP, Vista, and 7. Database requires SQLite and tasks are performed using Windows API. To handle the current active windows we invoke GetForegroundWindow, window title is obtained using GetWindowText. To get process we use GetProcessById method with System.Diagnostics.Process class to obtain execution file name. \par
+	Similar to tasks, the keystrokes and mouse clicks is measured by registering a method to hook the keyboard and mouse events in SetWindowsHookEx. In addition we also measure files with GetFiles method from System.IO.Directory class at regular time intervals to scan the files specified in that directory to measure number of files and file size. \par
+	Once everything has been recorded and done in one interval of choice, whether days or weeks, it will generate CSV file as an output. This CSV file is the log of everyone measurement which will be used to compile into one work hour sheet and another pre-processed data log file sheet required to visualize a graph of total time spent in tasks and total work hour of every developers by using Google Chart API and a framework called charts4j to run Google Chart API using Java language.
+	
+\section{Case Study 1: Team Measurement}
+
+\subsection{Goal of Measurement}
+	In the first case study in one software development organization, we believed that to discover the clues of problems in the development department will lead to improvements, so to carry out the analysis of measurement results, we assign one veteran employee as a manager and support department which function as a Project Management Office (PMO).
 	
 \begin{figure}[h]
 	\centering	

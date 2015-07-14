@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.7)  14 JUL 2015 11:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.7)  14 JUL 2015 16:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -309,74 +309,64 @@ LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
 LaTeX Font Info:    Font shape `OT1/txss/m/sl' will be
 (Font)              scaled to size 8.54997pt on input line 60.
 
-Overfull \hbox (4.69315pt too wide) in paragraph at lines 61--63
-\OT1/txr/bx/n/8 SUMMARY \OT1/txr/m/n/8 In-tro-duc-tion of soft-ware de-vel-op-m
-ent pro-cess mea-sure-ment
- []
-
-
-Underfull \hbox (badness 6510) in paragraph at lines 69--69
+Underfull \hbox (badness 6510) in paragraph at lines 67--67
 \OT1/txr/m/n/10 To pro-mote an idea of "Pro-cess Im-prove-ment via
  []
 
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 74.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/txfonts/omstxr.fd
-File: omstxr.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 74.
- [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
 Missing character: There is no „ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no å in font txr!
 Missing character: There is no „ in font txr!
 Missing character: There is no Ä in font txr!
 Missing character: There is no ç in font txr!
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 76.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/txfonts/omstxr.fd
+File: omstxr.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <10> not available
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 76.
+ [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-Underfull \hbox (badness 5417) in paragraph at lines 80--80
+
+]
+Underfull \hbox (badness 5417) in paragraph at lines 78--78
 []\OT1/txr/m/n/10 Without caus-ing the Con-text Switch, au-to-matic
  []
 
 
-Underfull \hbox (badness 4726) in paragraph at lines 86--86
+Underfull \hbox (badness 4726) in paragraph at lines 84--84
 \OT1/txr/m/n/10 re-quire-ments of task mea-sur-ing sys-tem, our sys-tem
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
-<images/fig1.png, id=15, 653.44125pt x 453.695pt>
+[2] <images/fig1.png, id=15, 653.44125pt x 453.695pt>
 File: images/fig1.png Graphic file (type png)
  <use images/fig1.png>
-Package pdftex.def Info: images/fig1.png used on input line 145.
+Package pdftex.def Info: images/fig1.png used on input line 143.
 (pdftex.def)             Requested size: 250.0pt x 173.57584pt.
 
-Overfull \hbox (11.3811pt too wide) in paragraph at lines 145--146
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 143--144
  [][] 
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 <images/fig2.png, id=17, 444.66125pt x 453.695pt>
 File: images/fig2.png Graphic file (type png)
  <use images/fig2.png>
-Package pdftex.def Info: images/fig2.png used on input line 152.
+Package pdftex.def Info: images/fig2.png used on input line 150.
 (pdftex.def)             Requested size: 150.00153pt x 153.04968pt.
 
 
@@ -385,34 +375,34 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <images/fig3.png, id=18, 502.87875pt x 452.69125pt>
 File: images/fig3.png Graphic file (type png)
  <use images/fig3.png>
-Package pdftex.def Info: images/fig3.png used on input line 159.
+Package pdftex.def Info: images/fig3.png used on input line 157.
 (pdftex.def)             Requested size: 150.00153pt x 135.02786pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/fig4.png, id=19, 385.44pt x 219.82124pt>
+
+Underfull \hbox (badness 5832) in paragraph at lines 169--169
+\OT1/txr/m/n/10 is mea-sured by reg-is-ter-ing a method to hook the
+ []
+
+[3 <./images/fig1.png> <./images/fig2.png> <./images/fig3.png>]
+<images/fig4.png, id=25, 385.44pt x 219.82124pt>
 File: images/fig4.png Graphic file (type png)
  <use images/fig4.png>
-Package pdftex.def Info: images/fig4.png used on input line 170.
+Package pdftex.def Info: images/fig4.png used on input line 179.
 (pdftex.def)             Requested size: 150.00153pt x 85.54544pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/fig5.png, id=20, 323.70938pt x 401.24907pt>
+<images/fig5.png, id=26, 323.70938pt x 401.24907pt>
 File: images/fig5.png Graphic file (type png)
  <use images/fig5.png>
-Package pdftex.def Info: images/fig5.png used on input line 177.
+Package pdftex.def Info: images/fig5.png used on input line 186.
 (pdftex.def)             Requested size: 150.00153pt x 185.92989pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/fig6.png, id=21, 570.13pt x 382.42876pt>
+<images/fig6.png, id=27, 570.13pt x 382.42876pt>
 File: images/fig6.png Graphic file (type png)
  <use images/fig6.png>
-Package pdftex.def Info: images/fig6.png used on input line 184.
+Package pdftex.def Info: images/fig6.png used on input line 193.
 (pdftex.def)             Requested size: 150.00153pt x 100.61371pt.
 
 
@@ -424,7 +414,7 @@ Overfull \hbox (1.44106pt too wide) in paragraph at lines 4--6
 h.html. 
  []
 
-[3 <./images/fig1.png> <./images/fig2.png> <./images/fig3.png>]
+
 Overfull \hbox (24.04105pt too wide) in paragraph at lines 8--10
 []\OT1/txr/m/n/8 Slimtimer - time track-ing with-out the timesheet.  http://www
 .slimtimer.com/. 
@@ -697,7 +687,7 @@ Here is how much of TeX's memory you used:
  6140 multiletter control sequences out of 15000+600000
  40956 words of font info for 100 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 38i,10n,23p,1467b,272s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,10n,23p,1467b,256s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.en
 c}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr
 /local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/
@@ -706,7 +696,7 @@ texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive
 f-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fo
 nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on taskpit.pdf (4 pages, 464250 bytes).
+Output written on taskpit.pdf (4 pages, 465791 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream
