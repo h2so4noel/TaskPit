@@ -125,14 +125,14 @@
 \begin{itemize}
 	\item[] Requirement analysis documents = 
 	\item[] "C:$\backslash$Users$\backslash$monden$\backslash$desktop$\backslash$development$\backslash$SRS", 
-	\item[]"doc,tex,txt" \newline
+	\item[]"doc,tex,txt"
 	\item[]Design documents = 
 	\item[] "C:\textbackslash Documents and Settings\textbackslash monden\textbackslash desktop\textbackslash 
 	\item[] development\textbackslash sources", "c,cpp,java" \newline
 \end{itemize}
 
 \noindent $\bullet$ Regarding Privacy \par
-		During the measuring process of the team, it is necessary to protect personal information and keeping the privacy of developers in a comfort zone. In the proposed system, the key strokes, applications, window names, file names, and many more are not recorded to prevent the feeling of being "monitored" by the user, because it could cause negative feedback to the system we introduced. Any other window or application that user open up will instead recorded as "Other Tasks".
+		During the measuring process of the team, it is necessary to protect personal information and keeping the privacy of developers in a comfort zone. In the proposed system, application name, windows name, file name, and many more are not recorded to prevent the feeling of being "monitored" by the user, because it could cause negative feedback to the system we introduced. Any other window or application that user open up will instead recorded as "Other Tasks".
 		
 \subsubsection{[Requirement 3: Team measurement]}
 	Data measured for each user is collected at one time with timestamp placed with each task in the team unit, and then count up amount of efforts and products produced.
@@ -153,15 +153,37 @@
 	\caption{Total work hour}
 	\label{fig2}
 \end{figure}
+
+\begin{figure}[h]
+	\centering	
+\includegraphics[width=0.3\textwidth]{fig3}
+	\caption{Total work hour in Line Chart}
+	\label{fig3}
+\end{figure}
 	
 \subsection{System Design}
-	As shown in Figure \ref{fig4}, TaskPit have its own database working at the back end of the system along with the visualization unit, configuration, and log files with daily report. In the configuration file will contain definition of tasks and files as described before in the requirement section.
+	As shown in Figure \ref{fig4}, TaskPit have its own database working at the back end of the system along with the visualization unit, configuration, and log files with daily report. In the configuration file will contain definitions of task and file as described before in the requirement section to be able to generate output of time interval of usage of each task and program in the log file. In Figure \ref{fig5} is the user interface of the program. Each task will record its own execution time by accumulating all time it has been in focus along with number of keystrokes and mouse clicks. \par
+	To meet up the requirement of being less burden to the overall system and without providing server too much load, there will be a specified shared directory to store measurement result. Visualization tool is also used with configuration files and log files to graph visualize chart from various aspects of measurement results for specific period of time. Working in the client to server fashion as shown in Figure \ref{fig6}.
 	
 \begin{figure}[h]
 	\centering	
 \includegraphics[width=0.3\textwidth]{fig4}
 	\caption{Overall System}
 	\label{fig4}
+\end{figure}
+
+\begin{figure}[h]
+	\centering	
+\includegraphics[width=0.3\textwidth]{fig5}
+	\caption{TaskPit User Interface}
+	\label{fig5}
+\end{figure}
+
+\begin{figure}[h]
+	\centering	
+\includegraphics[width=0.3\textwidth]{fig6}
+	\caption{Shared System}
+	\label{fig6}
 \end{figure}
 	
 \bibliography {taskpit}
