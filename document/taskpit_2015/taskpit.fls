@@ -1,4 +1,4 @@
-PWD /Users/h2so4noel/GitHub/taskpit/document/taskpit_paper
+PWD /Users/h2so4noel/GitHub/taskpit/document/taskpit_2015
 INPUT /usr/local/texlive/2015/texmf.cnf
 INPUT /usr/local/texlive/2015/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -192,6 +192,12 @@ INPUT ./images/fig5.png
 INPUT images/fig6.png
 INPUT ./images/fig6.png
 INPUT ./images/fig6.png
+INPUT images/fig7.png
+INPUT ./images/fig7.png
+INPUT ./images/fig7.png
+INPUT images/fig8.png
+INPUT ./images/fig8.png
+INPUT ./images/fig8.png
 INPUT taskpit.bbl
 INPUT taskpit.bbl
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/txfonts/txi.tfm

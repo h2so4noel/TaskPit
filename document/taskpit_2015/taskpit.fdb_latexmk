@@ -1,19 +1,21 @@
 # Fdb version 3
-["bibtex taskpit"] 1436851079 "taskpit.aux" "taskpit.bbl" "taskpit" 1436858682
+["bibtex taskpit"] 1437466239 "taskpit.aux" "taskpit.bbl" "taskpit" 1437466240
   "/usr/local/texlive/2015/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "taskpit.aux" 1436858682 1043 6a427b613d472d83e61f36333e7cf9d6 ""
+  "taskpit.aux" 1437466240 1091 d7ae1c267014a41b3fc1408e3ecdbacc ""
   "taskpit.bcf" 0 -1 0 ""
   "taskpit.bib" 1436408091 3850 0282fd116a97e1f64d091991822c8404 ""
   (generated)
   "taskpit.bbl"
   "taskpit.blg"
-["pdflatex"] 1436858681 "taskpit.tex" "taskpit.pdf" "taskpit" 1436858682
+["pdflatex"] 1437466239 "taskpit.tex" "taskpit.pdf" "taskpit" 1437466240
   "./images/fig1.png" 1436754537 69014 d29c183c7fc14603ca14d1ac3d2114b5 ""
   "./images/fig2.png" 1436754593 34204 99e2178141c7e4be764638a1c5b3b1d4 ""
   "./images/fig3.png" 1436754634 57663 e145400523cba6dc1dbc4aead109e470 ""
   "./images/fig4.png" 1436771379 30161 689bc8d5eba75cea95bd48593d72872d ""
   "./images/fig5.png" 1436501126 22850 c62f8f499554008fbee430ed185d625a ""
   "./images/fig6.png" 1436775742 304171 38621f7269901004ccac37860909b550 ""
+  "./images/fig7.png" 1437453945 109919 587832b3493625e3df46bf04a43fcd79 ""
+  "./images/fig8.png" 1437466170 95256 e8ec9b8d04b5174a08f58aa9d1b7982d ""
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm" 1136768653 520 82a3d37183f34b6eb363a161dfc002c2 ""
@@ -103,10 +105,12 @@
   "images/fig4.png" 1436771379 30161 689bc8d5eba75cea95bd48593d72872d ""
   "images/fig5.png" 1436501126 22850 c62f8f499554008fbee430ed185d625a ""
   "images/fig6.png" 1436775742 304171 38621f7269901004ccac37860909b550 ""
-  "taskpit.aux" 1436858682 1043 6a427b613d472d83e61f36333e7cf9d6 ""
-  "taskpit.bbl" 1436851079 2577 6ca99d750da3f5c3acc901245c1626ed "bibtex taskpit"
-  "taskpit.tex" 1436858681 17249 949c4df33a83cc181ed724fcbab39fde ""
+  "images/fig7.png" 1437453945 109919 587832b3493625e3df46bf04a43fcd79 ""
+  "images/fig8.png" 1437466170 95256 e8ec9b8d04b5174a08f58aa9d1b7982d ""
+  "taskpit.aux" 1437466240 1091 d7ae1c267014a41b3fc1408e3ecdbacc ""
+  "taskpit.bbl" 1437466239 2577 6ca99d750da3f5c3acc901245c1626ed "bibtex taskpit"
+  "taskpit.tex" 1437466237 19143 fd83788333d89d0a79251397947d336c ""
   (generated)
-  "taskpit.aux"
   "taskpit.log"
+  "taskpit.aux"
   "taskpit.pdf"

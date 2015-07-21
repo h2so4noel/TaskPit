@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.7)  14 JUL 2015 16:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.7)  21 JUL 2015 17:10
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **taskpit.tex
@@ -367,7 +367,7 @@ Overfull \hbox (11.3811pt too wide) in paragraph at lines 143--144
 File: images/fig2.png Graphic file (type png)
  <use images/fig2.png>
 Package pdftex.def Info: images/fig2.png used on input line 150.
-(pdftex.def)             Requested size: 150.00153pt x 153.04968pt.
+(pdftex.def)             Requested size: 199.99695pt x 204.05702pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -376,37 +376,83 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: images/fig3.png Graphic file (type png)
  <use images/fig3.png>
 Package pdftex.def Info: images/fig3.png used on input line 157.
-(pdftex.def)             Requested size: 150.00153pt x 135.02786pt.
+(pdftex.def)             Requested size: 199.99695pt x 180.03716pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
+[3 <./images/fig1.png> <./images/fig2.png> <./images/fig3.png>]
 Underfull \hbox (badness 5832) in paragraph at lines 169--169
 \OT1/txr/m/n/10 is mea-sured by reg-is-ter-ing a method to hook the
  []
 
-[3 <./images/fig1.png> <./images/fig2.png> <./images/fig3.png>]
 <images/fig4.png, id=25, 385.44pt x 219.82124pt>
 File: images/fig4.png Graphic file (type png)
  <use images/fig4.png>
 Package pdftex.def Info: images/fig4.png used on input line 179.
-(pdftex.def)             Requested size: 150.00153pt x 85.54544pt.
+(pdftex.def)             Requested size: 250.0pt x 142.57687pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 179--180
+ [][] 
+ []
 
 <images/fig5.png, id=26, 323.70938pt x 401.24907pt>
 File: images/fig5.png Graphic file (type png)
  <use images/fig5.png>
 Package pdftex.def Info: images/fig5.png used on input line 186.
-(pdftex.def)             Requested size: 150.00153pt x 185.92989pt.
+(pdftex.def)             Requested size: 199.99695pt x 247.90244pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 <images/fig6.png, id=27, 570.13pt x 382.42876pt>
 File: images/fig6.png Graphic file (type png)
  <use images/fig6.png>
 Package pdftex.def Info: images/fig6.png used on input line 193.
-(pdftex.def)             Requested size: 150.00153pt x 100.61371pt.
+(pdftex.def)             Requested size: 250.0pt x 167.69145pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 193--194
+ [][] 
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 4416) in paragraph at lines 200--201
+[]\OT1/txr/m/n/10 In this de-part-ment we used Trac as a project
+ []
+
+
+Underfull \hbox (badness 4913) in paragraph at lines 200--201
+\OT1/txr/m/n/10 man-age-ment tool for the browser, which has been
+ []
+
+
+Underfull \hbox (badness 7576) in paragraph at lines 200--201
+\OT1/txr/m/n/10 en-cour-aged to carry out ma-te-rial man-age-ment and
+ []
+
+[4 <./images/fig4.png> <./images/fig5.png> <./images/fig6.png>]
+<images/fig7.png, id=32, 627.34375pt x 196.735pt>
+File: images/fig7.png Graphic file (type png)
+ <use images/fig7.png>
+Package pdftex.def Info: images/fig7.png used on input line 204.
+(pdftex.def)             Requested size: 250.0pt x 78.4014pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 204--205
+ [][] 
+ []
+
+<images/fig8.png, id=33, 481.8pt x 164.615pt>
+File: images/fig8.png Graphic file (type png)
+ <use images/fig8.png>
+Package pdftex.def Info: images/fig8.png used on input line 214.
+(pdftex.def)             Requested size: 250.0pt x 85.41692pt.
+
+Overfull \hbox (11.3811pt too wide) in paragraph at lines 214--215
+ [][] 
+ []
 
 (./taskpit.bbl
 Overfull \hbox (1.44106pt too wide) in paragraph at lines 4--6
@@ -678,28 +724,29 @@ Missing character: There is no ˆ in font txr!
 Missing character: There is no ç in font txr!
 Missing character: There is no ¤ in font txr!
 Missing character: There is no ¾ in font txr!
-) [4 <./images/fig4.png> <./images/fig5.png> <./images/fig6.png>]
-(./taskpit.aux) ) 
+) [5
+
+ <./images/fig7.png> <./images/fig8.png>] (./taskpit.aux) ) 
 Here is how much of TeX's memory you used:
- 2730 strings out of 493089
- 36394 string characters out of 6134843
- 97369 words of memory out of 5000000
- 6140 multiletter control sequences out of 15000+600000
+ 2742 strings out of 493089
+ 36580 string characters out of 6134843
+ 97385 words of memory out of 5000000
+ 6150 multiletter control sequences out of 15000+600000
  40956 words of font info for 100 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  38i,10n,23p,1467b,256s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.en
-c}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
-urw/times/utmri8a.pfb>
-Output written on taskpit.pdf (4 pages, 465791 bytes).
+{/usr/local/texlive/
+2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/txfonts/txsy.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/u
+rw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/time
+s/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.
+pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on taskpit.pdf (5 pages, 565396 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 64 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
