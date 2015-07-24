@@ -51,15 +51,13 @@
 		Kingo Yamada, 
 		Ken-ichi Matsumoto}
 		
-
-
 \date {2015-07-07}
 
 \begin {document}
 
 \maketitle
 \begin {summary}
-	To find any problems in a software development process, we have been developing an automated measurement tool called TaskPit, which monitors software development tasks such as programming, testing and documentation based on the execution history of software applications. This paper introduces the system requirements, design and implementation of TaskPit; then, presents two industry case studies applying TaskPit to actual software development. In the first case study, we applied TaskPit to 12 software developers in a certain software development division. As a result, several concerns (to be improved) have been revealed such as (a) a project leader spend too much time on development tasks while he was supposed to be a manager rather than a developer, (b) several developers rarely used e-mails while a company instructed developers to use e-mails as much as possible to leave communication records during development, and (c) several developers wrote too long e-mails to their customers. In the second case study, we have recorded the planned, actual, and declared time of development tasks. As a result, we found that (d) there were unplanned tasks in more than half of days, and (e) the declared time became closer day by day to the actual time measured by TaskPit. These suggest that TaskPit is useful not only for a project manager who is responsible to the process improvement but also for a developer who wants to improve by him/herself.
+	To find any problems in a software development process, we have been developing an automated measurement tool called TaskPit, which monitors software development tasks such as programming, testing and documentation based on the execution history of software applications. This paper introduces the system requirements, design and implementation of TaskPit; then, presents two industry case studies applying TaskPit to actual software development. In the first case study, we applied TaskPit to 12 software developers in a certain software development division. As a result, several concerns (to be improved) have been revealed such as (a) a project leader spend too much time on development tasks while he was supposed to be a manager rather than a developer, (b) several developers rarely used e-mails while a company instructed developers to use e-mails as much as possible to leave communication records during development, and (c) several developers wrote too long e-mails to their customers. In the second case study, we have recorded the planned, actual, and declared time of development tasks. As a result, we found that (d) there were unplanned tasks in more than half of days, and (e) the declared time became closer day by day to the actual time measured by TaskPit. These suggest that TaskPit is useful not only for a project manager who is responsible to the process improvement but also for a developer who wants to improve by themself.
 \end {summary}
 	
 \section {Introduction}
@@ -215,7 +213,46 @@
 	\caption{File Configuration}
 	\label{fig8}
 \end{figure}
+
+\subsection{Measurement Results and Analysis}
+	From Figure \ref{fig9} is time spent in each tasks, shows a working time of respective mean value per day. Working hours are collected from the start to the end of using TaskPit. The obtained results are as follows.\par
 	
+\begin{figure}[h]
+	\centering	
+\includegraphics[width=0.5\textwidth]{fig9}
+	\caption{Time Spent}
+	\label{fig9}
+\end{figure}
+
+\begin{itemize}
+	\item As shown in Figure \ref{fig9} there are tasks that were unregistered in every developers. With A3, B2, B4 in particular who exceeded 100 minutes in this category. One of the cause of this for this department is because new program and unidentified application can be installed into this pre-determined application only PC. There is a case where unspecified application is detected. Also the attendance management system for the developers was not registered in the configuration file. Furthermore, TaskPit can not measure testing or debugging that happens in Virtual OS. (This was fixed in TaskPit 1.0.3 so that Virtual OS can be measured normally)
+	\item Overall working hours of members in Project A (A1, A2, A3) is longer. Project A is also closer to the deadline with members working hours really close to the time they were given. On the other hand B1, B2, B3 and B4 are progressing steadily with shorter work hours compared to Project A. By the work of TaskPit, it can be concluded that this program can grasp a hold of how busy a project is.
+	\item Person with the best performance is A1, as seen from the PC work time and actual work hour are really close together. Spent 184 minutes debugging, 106 minutes editing and another 94 minutes testing. A1 is definitely a programmer who actually work on the task given. Meanwhile, A2 who belongs to the same project spent 0 minute debugging (with unregistered 76 minutes to be added), along with 156 minutes testing. TaskPit is able to understand the work of each developer by visualizing it.
+	\item The relationship between working hours and work time on PC is shown in Figure \ref{fig10}. From this figure, leaders spent little time in PC compare to working hours than those of developers and customer support. This is due to the leaders having to spent time working in business and management part rather than developing and coding. However, leader L2 has slightly larger PC time compare to other leaders. Breaking down the tasks, leader L2 had engaged on average 71 minutes in testing along with 103 minutes in excel program operation. As a leader this could be said that too much time is spent on development work.
+	\item Two customer supports (CS1, CS2) as seen on the chart are mostly engaged into mailing and browsing. This is due to their work requires communicating and interacting with customers via e-mail. It is suggests that we apply material management using Trac on the browser. (In this measurement, the problem of not being able to reflect differences in tasks on the browser configuration is also revealed here.)
+	\item Looking at mail tasks, L2, A3, B1, B2, B3, B4 are all spent less than 15 minutes here. In this department we have encouraged members to use e-mail more than telephone as a communication method (in order to keep the record for later). From this fact, it can be said that L2 has spent too little time using e-mail, and furthermore L2 has been reported with more extensive use of telephone.
+	\item Figure \ref{fig11} shows time spent in mailing and programming along with their respective typing speed (or key strokes). Comparing key strokes per minute for the e-mail tasks, CS1 and CS2 seems higher. It could be possible that the content in e-mails of these members are longer or could be the cause of typing correction. The mail exchanging with customer requires simplicity and quality in terms of information along with descriptive content. It is possible that we could use an improvement in mail writing.
+	\item Looking from Figure \ref{fig11}. It is possible that A1 is the most productive, excluding quality, among other member of this team, as told by his typing speed is rather high along with his over-the-top time spent in programming and debug.
+\end{itemize}
+
+\begin{figure}[h]
+	\centering	
+\includegraphics[width=0.5\textwidth]{fig10}
+	\caption{PC Work Time and Working Hour Relationship}
+	\label{fig10}
+\end{figure}
+
+\begin{figure}[h]
+	\centering	
+\includegraphics[width=0.5\textwidth]{fig11}
+	\caption{Mail and Programming}
+	\label{fig11}
+\end{figure}
+
+\section{Case Study 2: Personal Measurement}
+
+\subsection{Measurement Purpose and Methods}
+	In this second case study, the developer performed his own measurement and analysis assuming that it would lead to self improvements. The developer will set his own planned value for each development tasks for everyday and also measure value everyday to see the difference. Planned value is the value developers set at the beginning of the day to be a goal. The measured value is value obtained by TaskPit. The developer will also report his own measured value at the end of the day before comparing with TaskPit.
 \bibliography {taskpit}
 \bibliographystyle {plain}
 	

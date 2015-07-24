@@ -66,16 +66,15 @@ Koji Torii, Ken-ichi Matsumoto, Kumiyo Nakakoji, Yoshihiro Takada, Shingo
 \newblock {\em Software Engineering, IEEE Transactions on}, 25(4):474--492,
   1999.
 
-\bibitem{sec2010itproject}
-樋口登.
-\newblock It プロジェクトを 「見える化」
-  するチェックシート.
-\newblock {\em SEC journal}, 6(1):32--35, 2010.
-
 \bibitem{nec2010software}
 直美 and 誉田.
 \newblock {\em ソフトウェア品質会計: NEC
   の高品質ソフトウェア開発を支える品質保証技術}.
 \newblock 日科技連出版社, 2010.
+
+\bibitem{sec2010itproject}
+樋口登.
+\newblock It プロジェクトを 「見える化」 するチェックシート.
+\newblock {\em SEC journal}, 6(1):32--35, 2010.
 
 \end{thebibliography}
