@@ -48,7 +48,7 @@
 		Hidetake Uwano, 
 		Yasutaka Kamei, \\
 		Kenji Araki, 
-		Kingo Yamada, 
+		Kingo Yamada,t 
 		Ken-ichi Matsumoto}
 		
 \date {2015-07-07}
@@ -252,7 +252,42 @@
 \section{Case Study 2: Personal Measurement}
 
 \subsection{Measurement Purpose and Methods}
-	In this second case study, the developer performed his own measurement and analysis assuming that it would lead to self improvements. The developer will set his own planned value for each development tasks for everyday and also measure value everyday to see the difference. Planned value is the value developers set at the beginning of the day to be a goal. The measured value is value obtained by TaskPit. The developer will also report his own measured value at the end of the day before comparing with TaskPit.
+	In this second case study, the developer performed his own measurement and analysis assuming that it would lead to self improvements. The developer will set his own planned value for each development tasks for everyday and also measure value everyday to see the difference. Planned value is the value developers set at the beginning of the day to be a goal. The measured value is value obtained by TaskPit. The developer will also report his own measured value at the end of the day before comparing with TaskPit.\par
+	If the value of planned and measured are close together, even without using TaskPit, that developer is able to perform tasks along what was planned and has responsibility in his given work. However, if large difference between measured and reported value are presented, the developer may not be able to understand the implementation time of the task. Also when there are large difference between what was planned and what was measured, this is a serious problem as you can not manage your time well.
+
+\subsection{Measurement Target and Period}
+	The target of this measurement belongs to a different organization from the first case study. The web-based programming developer who was tasked for total 17 days (13 business days). Prior to this measurement, the developer studied and learnt the configuration file of TaskPit in 3 days. Also at the end of the daily work, planned values and measured values are asked to be presented and to give comments upon them.
+
+\subsection{Measurement Results and Analysis}
+	Measured value and planned value are shown in Figure \ref{fig12} and Figure \ref{fig13} respectively. The horizontal axis of each graph is the number of days and the vertical represents number of hours. Measured values are likely to be smaller than what is planned, except for day 11. From the comment presented by the developer, this is because he did not use the personal computer on day 4, while first three days is because of unexpected amount of work. In fact, the unplanned work was planned to be included from the start by the amount of 5 to 10 percent of total work, revealed by TaskPit. This should be noted however, that the planned value up to the day 11 was intended to be like what figures have shown.
+	In Figure \ref{fig14} shows the subtraction of measured value from the planned value. As shown in the figure, as time passed working on a task using TaskPit in the process, the time estimated has become closer to the actual measured value. Therefore in this case, by continuously usage of TaskPit, one can assume that developers can understand their workload correctly. "Working is now easier and now planning time and actual time are much closer together.". Therefore, by using TaskPit, developers are now aware of actual time and planned time and can develop themselves to exceed the expectation of what is planned. It is expected that this could be of use in managing and planning in development works. 
+
+\begin{figure}[h]
+	\centering	
+\includegraphics[width=0.5\textwidth]{fig12}
+	\caption{Measured Value}
+	\label{fig12}
+\end{figure}
+
+\begin{figure}[h]
+	\centering	
+\includegraphics[width=0.5\textwidth]{fig13}
+	\caption{Planned Value}
+	\label{fig13}
+\end{figure}
+
+\begin{figure}[h]
+	\centering	
+\includegraphics[width=0.5\textwidth]{fig14}
+	\caption{Result Value}
+	\label{fig14}
+\end{figure}
+
+\section{Summary}
+	In this paper, we clarified the effect of the automatic measurement in software development work for the purpose of publishing its findings and to apply it with two development organization. The first one was to measure 12 developers over six business days. It was found that it is possible that TaskPit can grasp and explain how busy the development process and each project of each developers are. In addition, it is estimated that (a) leader spent too much time developing, and not many people are communicating through e-mail. (b) In contact with customers through the e-mail, the content inside these mails are too long and was addressed in short period of time. Lastly (c) there is a possibility that there could be a room for some improvements in e-mail writing.
+	In the second organization, we observe and measure the developer who is tasked on developing web-software for 13 business days and recorded all measured and planned values. As a result (d) unplanned work was found more than half of the total work in a day, but (e) in the end the total work hours obtained from the measured data exceeds the expectation of what is planned, by using TaskPit to help managing and understanding developer's own work.
+	With more case studies and findings in the future, we expected this project to help many organizations in development process. The authors will continue working on application cases of TaskPit and expected to continue publish newly obtained findings.
+
 \bibliography {taskpit}
 \bibliographystyle {plain}
 	
